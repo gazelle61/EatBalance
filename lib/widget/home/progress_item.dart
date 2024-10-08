@@ -26,9 +26,9 @@ class ProgressItem extends StatelessWidget {
     return Container(
       padding: EdgeInsets.all(8),
       decoration: BoxDecoration(
-          color: color,
-          borderRadius: BorderRadius.circular(8),
-          border: Border.all(color: Colors.white)),
+        color: color,
+        borderRadius: BorderRadius.circular(8),
+      ),
       child: Column(
         mainAxisAlignment: MainAxisAlignment.start,
         children: [

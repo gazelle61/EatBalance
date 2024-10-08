@@ -23,7 +23,7 @@ class FoodHistoryItem extends StatelessWidget {
         boxShadow: [
           BoxShadow(
             color: Color(0xFFFFFBE6),
-            blurRadius: 6,
+            blurRadius: 1,
             offset: Offset(0, 3),
           ),
         ],
