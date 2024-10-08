@@ -19,6 +19,18 @@ class DashboardPage extends StatelessWidget {
     return Obx(() {
       return Scaffold(
         backgroundColor: Color(0xFFF5EFE6),
+        appBar: AppBar(
+          backgroundColor: Color(0xFF1A4D2E),
+          elevation: 0,
+          title: Container(
+            margin: EdgeInsets.symmetric(vertical: 10),
+            padding: EdgeInsets.symmetric(horizontal: 20, vertical: 8),
+            decoration: BoxDecoration(
+              color: Color(0xFFF5EFE6),
+              borderRadius: BorderRadius.circular(30),
+            ),
+          ),
+        ),
         body: menus[dashboardController.selectedIndex.value],
         bottomNavigationBar: BottomNavigationBar(
             currentIndex: dashboardController.selectedIndex.value,
@@ -27,14 +39,13 @@ class DashboardPage extends StatelessWidget {
             type: BottomNavigationBarType.fixed,
             items: [
               BottomNavigationBarItem(
-                icon: Icon(Icons.food_bank_outlined),
+                icon: Icon(Icons.grid_view),
                 label: "Food",
               ),
               BottomNavigationBarItem(
-                  icon: Icon(Icons.graphic_eq_rounded),
-                  label: "Daily Progress"),
+                  icon: Icon(Icons.book), label: "Daily Progress"),
               BottomNavigationBarItem(
-                  icon: Icon(Icons.person_2_outlined), label: "Profile"),
+                  icon: Icon(Icons.person), label: "Profile"),
             ]),
       );
     });
